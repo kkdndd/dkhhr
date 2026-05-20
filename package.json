@@ -1,0 +1,13 @@
+{
+  "name": "daekyo-handbook",
+  "version": "1.0.0",
+  "description": "대교홀딩스 인사·복리후생 안내 사이트",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.4"
+  }
+}

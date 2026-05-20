@@ -1,0 +1,13 @@
+# Netlify 배포 설정
+[build]
+  command = "npm run build"
+  publish = "docs/.vitepress/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback (clean URLs 사용 시)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
