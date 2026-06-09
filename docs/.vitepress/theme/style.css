@@ -1,0 +1,477 @@
+/**
+ * 대교홀딩스 전역 컬러 — 다크 네이비 + 골드 액센트
+ * VitePress 기본 brand 색상을 네이비로 덮어씁니다.
+ */
+
+:root {
+  /* 메인 브랜드 컬러 (네이비) */
+  --vp-c-brand-1: #1A2A4F;
+  --vp-c-brand-2: #2A3D6B;
+  --vp-c-brand-3: #1A2A4F;
+  --vp-c-brand-soft: rgba(26, 42, 79, 0.12);
+
+  /* 골드 액센트 */
+  --dk-gold: #C9A961;
+  --dk-gold-soft: rgba(201, 169, 97, 0.18);
+
+  /* 텍스트/배경 */
+  --vp-c-text-1: #1A1A1A;
+}
+
+.dark {
+  --vp-c-brand-1: #6B8FC8;
+  --vp-c-brand-2: #8AA8D9;
+  --vp-c-brand-3: #6B8FC8;
+  --vp-c-brand-soft: rgba(107, 143, 200, 0.18);
+}
+
+/* 상단 nav 활성 메뉴 색 */
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 사이드바 활성 항목 */
+.VPSidebarItem.is-active > .item .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 검색 버튼 호버 */
+.DocSearch-Button:hover {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+/* 문서 내 링크 색 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+/* 표 헤더 강조 */
+.vp-doc th {
+  background: rgba(26, 42, 79, 0.05);
+  color: var(--vp-c-brand-1);
+}
+
+/* 코드 인라인 */
+.vp-doc :not(pre) > code {
+  color: var(--vp-c-brand-1);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   모든 표 — 한글 단어 단위 줄바꿈
+   (좁은 컬럼에서 단어 중간에 끊기지 않도록)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.vp-doc table td,
+.vp-doc table th {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   "제도 요약" 헤딩 강조 + 직후 표 강조
+   ## 제도 요약 {#summary} 로 마크다운에 작성하면 적용됨
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.vp-doc h2#summary {
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  color: #1A2A4F !important;
+  margin: 3rem 0 1.3rem !important;
+  padding: 0.75rem 1rem 0.85rem 1.1rem !important;
+  border-left: 6px solid #C9A961 !important;
+  border-bottom: 2px solid #1A2A4F !important;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 169, 97, 0.1) 0%,
+    rgba(26, 42, 79, 0.04) 35%,
+    transparent 85%
+  );
+  border-radius: 4px 0 0 0;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+
+/* 헤딩 앞 클립보드 아이콘 */
+.vp-doc h2#summary::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.55rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%231A2A4F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3h6v3H9z"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/><line x1="8" y1="19" x2="13" y2="19"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+/* 헤딩 우측의 anchor 링크(#) 위치 정렬 */
+.vp-doc h2#summary .header-anchor {
+  margin-left: 0.4rem;
+}
+
+/* 제도 요약 직후 표 — 강조 스타일 */
+.vp-doc h2#summary + table,
+.vp-doc h2#summary + figure > table,
+.vp-doc h2#summary + p + table {
+  display: table !important;   /* VitePress 기본 display:block 오버라이드 */
+  width: 100% !important;       /* 테두리에 맞게 표 너비 채움 */
+  margin-top: 0;
+  border: 2px solid #1A2A4F;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(26, 42, 79, 0.12);
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+}
+
+.vp-doc h2#summary + table thead tr,
+.vp-doc h2#summary + figure > table thead tr,
+.vp-doc h2#summary + p + table thead tr {
+  background: #1A2A4F !important;
+}
+
+.vp-doc h2#summary + table thead th,
+.vp-doc h2#summary + figure > table thead th,
+.vp-doc h2#summary + p + table thead th {
+  color: #ffffff !important;
+  background: #1A2A4F !important;
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+  border-bottom: none;
+  border-color: rgba(255, 255, 255, 0.18);
+  letter-spacing: -0.01em;
+}
+
+.vp-doc h2#summary + table tbody tr:nth-child(even),
+.vp-doc h2#summary + figure > table tbody tr:nth-child(even) {
+  background: #F4F6FA;
+}
+
+.vp-doc h2#summary + table tbody td,
+.vp-doc h2#summary + figure > table tbody td {
+  padding: 0.85rem 1rem;
+  border-color: #E2E8F0;
+}
+
+.vp-doc h2#summary + table tbody td a,
+.vp-doc h2#summary + figure > table tbody td a {
+  color: #1A2A4F !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.vp-doc h2#summary + table tbody td a:hover {
+  color: #C9A961 !important;
+}
+
+/* 요약표의 "제도" 컬럼 (각 항목명) 볼드 처리
+   - 일반 표: 첫 번째 td (단, rowspan 없는 경우)
+   - rowspan 표(예: 출산/육아): rowspan 셀 바로 다음 td (구분 옆의 제도)
+*/
+.vp-doc h2#summary + table tbody td:first-child:not([rowspan]),
+.vp-doc h2#summary + table tbody td[rowspan] + td,
+.vp-doc h2#summary + figure > table tbody td:first-child:not([rowspan]),
+.vp-doc h2#summary + figure > table tbody td[rowspan] + td {
+  font-weight: 700;
+  color: #1A2A4F;
+}
+
+.dark .vp-doc h2#summary + table tbody td:first-child:not([rowspan]),
+.dark .vp-doc h2#summary + table tbody td[rowspan] + td,
+.dark .vp-doc h2#summary + figure > table tbody td:first-child:not([rowspan]),
+.dark .vp-doc h2#summary + figure > table tbody td[rowspan] + td {
+  color: #E8ECF5;
+}
+
+/* rowspan 으로 병합된 첫 컬럼 (구분) 강조 */
+.vp-doc h2#summary + table tbody td[rowspan],
+.vp-doc h2#summary + figure > table tbody td[rowspan] {
+  background: #1A2A4F;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.vp-doc h2#summary + table tbody td[rowspan] strong,
+.vp-doc h2#summary + figure > table tbody td[rowspan] strong {
+  color: #C9A961;
+  font-weight: 700;
+}
+
+/* 다크 모드 */
+.dark .vp-doc h2#summary {
+  color: #E8ECF5 !important;
+  border-bottom-color: #6B8FC8 !important;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 169, 97, 0.15) 0%,
+    rgba(107, 143, 200, 0.06) 35%,
+    transparent 85%
+  );
+}
+
+.dark .vp-doc h2#summary::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23E8ECF5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3h6v3H9z"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="16" y2="15"/><line x1="8" y1="19" x2="13" y2="19"/></svg>');
+}
+
+.dark .vp-doc h2#summary + table tbody tr:nth-child(even) {
+  background: rgba(107, 143, 200, 0.08);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   신청/처리 절차 도식 (Process Flow)
+   사용 예: <div class="dk-process-flow">
+              <div class="dk-process-row">
+                <div class="dk-process-label">라벨</div>
+                <div class="dk-process-step">단계 1</div>
+                <div class="dk-process-arrow">▶</div>
+                ...
+              </div>
+            </div>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.dk-process-flow {
+  margin: 1.2rem 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.dk-process-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+/* 좌측 라벨 (프로세스 이름) */
+.dk-process-label {
+  background: linear-gradient(135deg, #C9A961 0%, #B5944D 100%);
+  color: #ffffff;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+/* 두 번째 행 라벨 (네이비 variant) */
+.dk-process-row:nth-child(2) .dk-process-label,
+.dk-process-label.dk-navy {
+  background: linear-gradient(135deg, #2A3D6B 0%, #1A2A4F 100%);
+}
+
+/* 각 단계 박스 */
+.dk-process-step {
+  flex: 1;
+  background: #F4F6FA;
+  border: 1px solid #DCE2EE;
+  padding: 0.85rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.45;
+  color: #1A2A4F;
+  font-weight: 500;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  min-height: 64px;
+}
+
+/* 화살표 */
+.dk-process-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1A2A4F;
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.dk-process-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* SVG 없이 빈 div 만으로도 CSS 삼각형 화살표가 표시되도록 fallback */
+.dk-process-arrow:empty::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid currentColor;
+}
+
+/* 다크 모드 */
+.dark .dk-process-step {
+  background: #1c1c1e;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #E8ECF5;
+}
+
+.dark .dk-process-arrow {
+  color: #94A3B8;
+}
+
+/* ── 상세형 카드 도식 (번호 + 제목 + 내용 있는 큰 카드) ──
+   소셜크루처럼 단계마다 풍부한 설명이 필요한 경우 사용
+*/
+.dk-process-step-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #DCE2EE;
+  border-radius: 6px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 140px;
+  font-weight: 500;
+  color: #1A2A4F;
+}
+
+.dk-step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background: #F4F6FA;
+  border-bottom: 1px solid #DCE2EE;
+}
+
+.dk-step-number {
+  background: #1A2A4F;
+  color: #ffffff;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.82rem;
+  flex-shrink: 0;
+}
+
+.dk-step-title {
+  font-weight: 700;
+  color: #1A2A4F;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  flex: 1;
+  text-align: center;
+}
+
+.dk-step-body {
+  padding: 0.75rem 0.85rem;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: #424245;
+  flex: 1;
+  font-weight: 400;
+}
+
+.dk-step-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dk-step-body ul li {
+  margin: 0.2rem 0;
+  padding-left: 0.85rem;
+  position: relative;
+}
+
+.dk-step-body ul li::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  color: #1A2A4F;
+  font-size: 0.55rem;
+  top: 0.45rem;
+}
+
+.dk-step-body .dk-sub-note {
+  display: block;
+  margin-top: 0.2rem;
+  padding-left: 0.5rem;
+  color: #475569;
+  font-size: 0.78rem;
+}
+
+.dk-step-body u {
+  text-decoration: underline;
+  text-decoration-color: #1A2A4F;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.dark .dk-process-step-card {
+  background: #1c1c1e;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #E8ECF5;
+}
+
+.dark .dk-step-header {
+  background: #2c2c2e;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .dk-step-title {
+  color: #E8ECF5;
+}
+
+.dark .dk-step-body {
+  color: #C4C9D2;
+}
+
+/* 모바일: 세로 배치 + 화살표 회전 */
+@media (max-width: 768px) {
+  .dk-process-row {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .dk-process-label {
+    min-width: 0;
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  .dk-process-arrow {
+    width: 100%;
+    height: 18px;
+  }
+
+  .dk-process-arrow svg,
+  .dk-process-arrow:empty::after {
+    transform: rotate(90deg);
+  }
+
+  .dk-process-step-card {
+    min-height: auto;
+  }
+}

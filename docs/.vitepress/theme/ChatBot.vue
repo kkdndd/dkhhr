@@ -3,12 +3,12 @@
  * 인사·복지 챗봇 컴포넌트
  *
  * 동작 방식
- *  1) 우측 하단 플로팅 버튼 → 클릭 시 채팅창 열림
- *  2) 사용자 입력 → faq-data.ts 의 keywords 와 매칭
- *  3) 가장 많은 키워드가 일치하는 답변을 표시
- *  4) 매칭 결과가 없으면 안내 메시지 + FAQ 페이지 안내
+ *  - 우측 하단에 채팅창이 항상 표시됨
+ *  - 헤더 우측 - 버튼으로 최소화 (헤더만 남김)
+ *  - 최소화 상태에서 헤더 클릭 또는 + 버튼 클릭 시 복원
+ *  - 사용자 입력 → faq-data.ts 의 keywords 와 매칭
  */
-import { ref, nextTick, onMounted, computed } from 'vue'
+import { ref, nextTick, onMounted } from 'vue'
 import { faqData, type FAQItem } from './faq-data'
 
 interface Message {
@@ -17,7 +17,7 @@ interface Message {
   link?: string
 }
 
-const isOpen = ref(false)
+const isMinimized = ref(false)
 const input = ref('')
 const messages = ref<Message[]>([])
 const messagesEl = ref<HTMLDivElement | null>(null)
@@ -25,11 +25,11 @@ const inputEl = ref<HTMLInputElement | null>(null)
 
 // 빠른 질문 (자주 사용되는 키워드)
 const quickQuestions = [
-  '연차 며칠?',
+  '연차',
   '경조금',
   '육아휴직',
-  '출산휴가',
-  '평가 등급'
+  '건강검진',
+  '장기근속포상'
 ]
 
 // 초기 인사 메시지
@@ -43,10 +43,13 @@ onMounted(() => {
   ]
 })
 
-function toggle() {
-  isOpen.value = !isOpen.value
-  if (isOpen.value) {
-    nextTick(() => inputEl.value?.focus())
+function toggleMinimize() {
+  isMinimized.value = !isMinimized.value
+  if (!isMinimized.value) {
+    nextTick(() => {
+      inputEl.value?.focus()
+      scrollToBottom()
+    })
   }
 }
 
@@ -87,7 +90,6 @@ function send() {
   messages.value.push({ role: 'user', text: userQ })
   input.value = ''
 
-  // 자연스럽게 보이도록 약간의 딜레이
   setTimeout(() => {
     const match = findAnswer(userQ)
     if (match) {
@@ -100,8 +102,7 @@ function send() {
       messages.value.push({
         role: 'bot',
         text:
-          '죄송합니다. 정확한 답을 찾지 못했어요. FAQ 페이지를 확인하시거나 인사팀(내선 1234)으로 문의해 주세요.',
-        link: '/faq/'
+          '죄송합니다. 정확한 답을 찾지 못했어요. 인사팀(내선 0219, minji_kang@daekyo.co.kr)으로 문의해 주세요.'
       })
     }
     scrollToBottom()
@@ -117,96 +118,81 @@ function askQuick(q: string) {
 </script>
 
 <template>
-  <!-- 플로팅 채팅 버튼 -->
-  <button
-    v-if="!isOpen"
-    class="chatbot-fab"
-    @click="toggle"
-    aria-label="챗봇 열기"
-    title="인사·복지 도우미"
-  >
-    💬
-  </button>
-
-  <!-- 채팅 창 -->
-  <div v-if="isOpen" class="chatbot-window">
-    <header class="chatbot-header">
+  <div :class="['chatbot-window', { minimized: isMinimized }]">
+    <!-- 헤더: 최소화 상태에서도 항상 보임. 클릭하면 토글 -->
+    <header
+      class="chatbot-header"
+      @click="isMinimized && toggleMinimize()"
+      :class="{ clickable: isMinimized }"
+    >
       <div>
         <div class="chatbot-title">인사·복지 도우미</div>
-        <div class="chatbot-subtitle">키워드로 빠르게 답을 찾아드려요</div>
-      </div>
-      <button class="chatbot-close" @click="toggle" aria-label="닫기">×</button>
-    </header>
-
-    <div ref="messagesEl" class="chatbot-messages">
-      <div
-        v-for="(msg, i) in messages"
-        :key="i"
-        :class="['chatbot-message', msg.role]"
-      >
-        <div class="chatbot-bubble">
-          <div>{{ msg.text }}</div>
-          <a v-if="msg.link" :href="msg.link" class="chatbot-link">
-            자세히 보기 →
-          </a>
+        <div class="chatbot-subtitle" v-if="!isMinimized">
+          키워드로 빠르게 답을 찾아드려요
         </div>
       </div>
-    </div>
-
-    <div class="chatbot-quick">
       <button
-        v-for="q in quickQuestions"
-        :key="q"
-        class="chatbot-quick-btn"
-        @click="askQuick(q)"
+        class="chatbot-minimize"
+        type="button"
+        @click.stop="toggleMinimize"
+        :aria-label="isMinimized ? '채팅창 펼치기' : '채팅창 최소화'"
+        :title="isMinimized ? '펼치기' : '최소화'"
       >
-        {{ q }}
+        <span v-if="isMinimized">+</span>
+        <span v-else>−</span>
       </button>
-    </div>
+    </header>
 
-    <form class="chatbot-input" @submit.prevent="send">
-      <input
-        ref="inputEl"
-        v-model="input"
-        type="text"
-        placeholder="예: 연차 며칠인가요?"
-        aria-label="질문 입력"
-      />
-      <button type="submit" :disabled="!input.trim()">전송</button>
-    </form>
+    <!-- 본문: 최소화 시 숨김 -->
+    <template v-if="!isMinimized">
+      <div ref="messagesEl" class="chatbot-messages">
+        <div
+          v-for="(msg, i) in messages"
+          :key="i"
+          :class="['chatbot-message', msg.role]"
+        >
+          <div class="chatbot-bubble">
+            <div>{{ msg.text }}</div>
+            <a v-if="msg.link" :href="msg.link" class="chatbot-link">
+              자세히 보기 →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chatbot-quick">
+        <button
+          v-for="q in quickQuestions"
+          :key="q"
+          class="chatbot-quick-btn"
+          @click="askQuick(q)"
+        >
+          {{ q }}
+        </button>
+      </div>
+
+      <form class="chatbot-input" @submit.prevent="send">
+        <input
+          ref="inputEl"
+          v-model="input"
+          type="text"
+          placeholder="예: 연차 며칠인가요?"
+          aria-label="질문 입력"
+        />
+        <button type="submit" :disabled="!input.trim()">전송</button>
+      </form>
+    </template>
   </div>
 </template>
 
 <style scoped>
-.chatbot-fab {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: none;
-  background: var(--vp-c-brand-1, #3eaf7c);
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.chatbot-fab:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-}
-
 .chatbot-window {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 360px;
+  width: 400px;
   max-width: calc(100vw - 32px);
-  height: 540px;
+  height: 756px;
   max-height: calc(100vh - 48px);
   display: flex;
   flex-direction: column;
@@ -216,45 +202,81 @@ function askQuick(q: string) {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
   z-index: 9999;
   overflow: hidden;
+  transition: height 0.25s ease, width 0.25s ease;
+}
+
+/* 최소화 상태: 헤더만 보이도록 높이 축소 (가로폭은 동일하게 400px 유지) */
+.chatbot-window.minimized {
+  height: auto;
+  width: 400px;
 }
 
 .chatbot-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 16px;
-  background: var(--vp-c-brand-1, #3eaf7c);
+  padding: 18px 22px;
+  background: var(--vp-c-brand-1, #1A2A4F);
   color: #fff;
+  flex-shrink: 0;
+}
+
+.chatbot-header.clickable {
+  cursor: pointer;
+}
+
+.chatbot-header.clickable:hover {
+  background: var(--vp-c-brand-2, #2A3D6B);
+}
+
+.chatbot-window.minimized .chatbot-header {
+  padding: 14px 20px;
 }
 
 .chatbot-title {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
+}
+
+.chatbot-window.minimized .chatbot-title {
+  font-size: 16px;
 }
 
 .chatbot-subtitle {
-  font-size: 12px;
+  font-size: 13px;
   opacity: 0.85;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
-.chatbot-close {
-  background: transparent;
+.chatbot-minimize {
+  background: rgba(255, 255, 255, 0.15);
   border: none;
   color: #fff;
-  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1;
   cursor: pointer;
-  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.chatbot-minimize:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .chatbot-messages {
   flex: 1;
   overflow-y: auto;
-  padding: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   background: var(--vp-c-bg-soft, #f6f6f7);
 }
 
@@ -273,31 +295,31 @@ function askQuick(q: string) {
 
 .chatbot-bubble {
   max-width: 80%;
-  padding: 10px 14px;
-  border-radius: 14px;
-  font-size: 14px;
-  line-height: 1.5;
+  padding: 12px 17px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.55;
   word-break: break-word;
 }
 
 .chatbot-message.user .chatbot-bubble {
-  background: var(--vp-c-brand-1, #3eaf7c);
+  background: var(--vp-c-brand-1, #1A2A4F);
   color: #fff;
-  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 5px;
 }
 
 .chatbot-message.bot .chatbot-bubble {
   background: var(--vp-c-bg, #fff);
   color: var(--vp-c-text-1, #213547);
   border: 1px solid var(--vp-c-divider, #e2e2e3);
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 5px;
 }
 
 .chatbot-link {
   display: inline-block;
-  margin-top: 8px;
-  font-size: 13px;
-  color: var(--vp-c-brand-1, #3eaf7c);
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--vp-c-brand-1, #1A2A4F);
   text-decoration: none;
   font-weight: 500;
 }
@@ -309,8 +331,8 @@ function askQuick(q: string) {
 .chatbot-quick {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  padding: 10px 12px 0;
+  gap: 8px;
+  padding: 13px 15px 0;
   background: var(--vp-c-bg, #fff);
 }
 
@@ -318,9 +340,9 @@ function askQuick(q: string) {
   background: var(--vp-c-bg-soft, #f6f6f7);
   border: 1px solid var(--vp-c-divider, #e2e2e3);
   color: var(--vp-c-text-1, #213547);
-  padding: 6px 12px;
-  border-radius: 16px;
-  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
   cursor: pointer;
   transition: background 0.15s;
 }
@@ -331,34 +353,34 @@ function askQuick(q: string) {
 
 .chatbot-input {
   display: flex;
-  gap: 8px;
-  padding: 12px;
+  gap: 10px;
+  padding: 16px;
   background: var(--vp-c-bg, #fff);
   border-top: 1px solid var(--vp-c-divider, #e2e2e3);
 }
 
 .chatbot-input input {
   flex: 1;
-  padding: 10px 12px;
+  padding: 12px 16px;
   border: 1px solid var(--vp-c-divider, #e2e2e3);
-  border-radius: 10px;
-  font-size: 14px;
+  border-radius: 12px;
+  font-size: 15px;
   background: var(--vp-c-bg, #fff);
   color: var(--vp-c-text-1, #213547);
   outline: none;
 }
 
 .chatbot-input input:focus {
-  border-color: var(--vp-c-brand-1, #3eaf7c);
+  border-color: var(--vp-c-brand-1, #1A2A4F);
 }
 
 .chatbot-input button {
-  padding: 10px 16px;
-  background: var(--vp-c-brand-1, #3eaf7c);
+  padding: 12px 22px;
+  background: var(--vp-c-brand-1, #1A2A4F);
   color: #fff;
   border: none;
-  border-radius: 10px;
-  font-size: 14px;
+  border-radius: 12px;
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
   transition: opacity 0.15s;
@@ -369,14 +391,20 @@ function askQuick(q: string) {
   cursor: not-allowed;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .chatbot-window {
     right: 12px;
     left: 12px;
     bottom: 12px;
     width: auto;
     max-width: none;
-    height: 70vh;
+    height: 75vh;
+  }
+
+  .chatbot-window.minimized {
+    width: auto;
+    left: auto;
+    right: 12px;
   }
 }
 </style>

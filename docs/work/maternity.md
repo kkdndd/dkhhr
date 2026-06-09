@@ -1,20 +1,73 @@
-# 모성보호 및 육아지원 제도
+# 출산/육아
 
-대교홀딩스는 임직원이 일·가정을 안정적으로 양립할 수 있도록 모성보호 및 육아지원 제도를 운영합니다.
+대교홀딩스는 임직원이 임신·출산·육아 기간 동안 안정적으로 일·가정을 양립할 수 있도록 모성보호 및 육아지원 제도를 운영합니다.
 
-## 제도 한눈에 보기
+## 제도 요약 {#summary}
 
-| 구분 | 세부 제도 |
-|------|-----------|
-| **① 임신기 지원** | 난임치료휴가 · 태아검진 시간 허용 · 임신기 근로시간 단축 · 유산·사산휴가 |
-| **② 출산 지원** | 출산전후휴가 · 배우자 출산휴가 |
-| **③ 육아 지원** | 육아휴직 · 육아기 근로시간 단축 |
+<table>
+<thead>
+<tr><th>구분</th><th>제도</th><th>대상</th><th>주요 내용</th><th>바로가기</th></tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4"><strong>임신기</strong></td>
+<td>난임치료휴가</td>
+<td>임직원 (남녀)</td>
+<td>연간 6일 (최초 2일 유급)</td>
+<td><a href="#infertility">바로가기 →</a></td>
+</tr>
+<tr>
+<td>태아검진시간 허용</td>
+<td>임신한 여성 사원</td>
+<td>총 8일 (1회 4시간 기준)</td>
+<td><a href="#prenatal-checkup">바로가기 →</a></td>
+</tr>
+<tr>
+<td>임신기 근로시간 단축</td>
+<td>임신한 여성 사원</td>
+<td>1일 최대 2시간 단축</td>
+<td><a href="#pregnancy-reduced-hours">바로가기 →</a></td>
+</tr>
+<tr>
+<td>유산·사산휴가</td>
+<td>유산·사산한 여성 사원</td>
+<td>임신 기간별 10~90일</td>
+<td><a href="#miscarriage">바로가기 →</a></td>
+</tr>
+<tr>
+<td rowspan="2"><strong>출산기</strong></td>
+<td>출산전후 휴가</td>
+<td>출산 예정/한 직원</td>
+<td>총 90일 (다태아 120일)</td>
+<td><a href="#maternity-leave">바로가기 →</a></td>
+</tr>
+<tr>
+<td>배우자 출산휴가</td>
+<td>배우자 출산한 직원</td>
+<td>총 20일 (3회 분할 가능)</td>
+<td><a href="#spouse-maternity">바로가기 →</a></td>
+</tr>
+<tr>
+<td rowspan="2"><strong>육아기</strong></td>
+<td>육아휴직</td>
+<td>만 8세 이하 자녀 둔 임직원</td>
+<td>자녀 1인당 최대 1년 (조건부 +6개월)</td>
+<td><a href="#parental-leave">바로가기 →</a></td>
+</tr>
+<tr>
+<td>육아기 근로시간 단축</td>
+<td>만 12세 이하 자녀 둔 근로자</td>
+<td>주 15~35시간, 최대 3년</td>
+<td><a href="#childcare-reduced-hours">바로가기 →</a></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ## ① 임신기 지원 제도
 
-### 난임치료휴가
+### 난임치료휴가 {#infertility}
 
 > 난임치료가 필요한 구성원이 안정적으로 치료를 받을 수 있도록 일·가정 양립 환경을 지원합니다.
 
@@ -27,9 +80,15 @@
 
 **[신청 절차]**
 
-1. ERP 근태신청 내 '휴가신청서_난임치료휴가(유급)' 또는 '난임치료휴가(무급)' 선택하여 상신
-2. 증빙서류 첨부
-3. 차상위권자 결재 (인사담당자 수신참조)
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_난임치료휴가<br>(유급/무급)' 상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">차상위권자 결재<br>(인사담당자 수신참조)</div>
+</div>
+</div>
 
 ::: warning 유의사항
 - 본인 이름과 진료 날짜가 기재된 증빙 서류 제출 필수 (진단서, 시술확인서 등)
@@ -39,7 +98,7 @@
 
 ---
 
-### 태아검진 시간 허용
+### 태아검진시간 허용 {#prenatal-checkup}
 
 > 임신 중 정기적인 태아 검진을 받을 수 있도록 필요한 시간을 지원하여 임산부와 태아의 건강을 보호합니다.
 
@@ -55,10 +114,17 @@
 
 **[신청 절차]**
 
-1. ERP 근태신청 내 '휴가신청서_태아검진시간' 상신
-2. 비고란 작성 (태아검진, 주수)
-3. 증빙서류 첨부
-4. 차상위권자 결재 (인사담당자 합의 지정)
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_태아검진시간'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">비고란 작성<br>(태아검진, 주수)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">차상위권자 결재<br>(인사담당자 합의 지정)</div>
+</div>
+</div>
 
 ::: warning 유의사항
 - 본인 이름과 진료 날짜가 기재된 증빙 서류 제출 필수 (안내문, 진료기록 등)
@@ -67,7 +133,7 @@
 
 ---
 
-### 임신기 근로시간 단축
+### 임신기 근로시간 단축 {#pregnancy-reduced-hours}
 
 > 임신 초기 및 후기 직원의 건강보호와 안전한 근무환경 조성을 위한 임신기 근로시간 단축제도입니다.
 
@@ -78,11 +144,15 @@
 
 **[신청 절차]**
 
-1. Playground 내 '임신기 근로시간 단축신청서' 상신
-2. 증빙서류 첨부 (임신확인서)
-3. 결재
-   - 의뢰부서: 본인 → 팀장 → 실장
-   - 주무부서: 인사담당자 → 인사팀장
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">Playground 내<br>'임신기 근로시간<br>단축신청서' 상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부<br>(임신확인서)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">결재<br>의뢰: 본인 → 팀장 → 실장<br>주무: 인사담당자 → 인사팀장</div>
+</div>
+</div>
 
 ::: info 임신기 근로시간 단축 시 연차 사용 기준
 | 구분 | 근무시간 |
@@ -100,7 +170,7 @@
 
 ---
 
-### 유산·사산휴가
+### 유산·사산휴가 {#miscarriage}
 
 > 유산 또는 사산을 경험한 직원의 신체적·정신적 회복을 지원하고 안정적인 건강 회복을 돕기 위한 제도입니다.
 
@@ -119,10 +189,17 @@
 
 **[신청 절차]**
 
-1. ERP 근태신청 내 '휴가신청서_출산휴가' 상신
-2. 비고란 사유 작성 (유산휴가/사산휴가)
-3. 증빙서류 첨부
-4. 실장 전결 (인사담당자 수신참조)
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_출산휴가'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">비고란 사유 작성<br>(유산휴가/사산휴가)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">실장 전결<br>(인사담당자 수신참조)</div>
+</div>
+</div>
 
 ::: warning 유의사항
 - 본인 이름과 날짜가 기재된 증빙 서류 제출 필수 (의료기관 진단서)
@@ -133,7 +210,7 @@
 
 ## ② 출산 지원 제도
 
-### 출산전후 휴가
+### 출산전후 휴가 {#maternity-leave}
 
 > 출산 전후 여성 근로자의 건강 보호와 안정적인 출산 및 회복을 지원하기 위한 제도입니다.
 
@@ -146,10 +223,17 @@
 
 **[신청 절차]**
 
-1. ERP 근태신청 내 '휴가신청서_출산휴가' 상신
-2. 사유 작성 (출산휴가)
-3. 증빙서류 첨부
-4. 실장 전결 (인사담당자 합의 지정)
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_출산휴가'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">사유 작성<br>(출산휴가)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">실장 전결<br>(인사담당자 합의 지정)</div>
+</div>
+</div>
 
 ::: warning 유의사항
 - 출산예정일을 확인할 수 있는 증빙 서류 제출 필수 (임신확인서, 진단서 등)
@@ -158,7 +242,7 @@
 
 ---
 
-### 배우자 출산휴가
+### 배우자 출산휴가 {#spouse-maternity}
 
 > 배우자의 출산 시 가족 돌봄과 출산 지원을 통해 일·가정 양립을 지원합니다.
 
@@ -171,10 +255,17 @@
 
 **[신청 절차]**
 
-1. ERP 근태신청 내 '휴가신청서_배우자출산휴가' 상신
-2. 사유 작성 (배우자 출산)
-3. 증빙서류 첨부
-4. 실장 전결 (인사담당자 합의 지정)
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_배우자출산휴가'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">사유 작성<br>(배우자 출산)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">실장 전결<br>(인사담당자 합의 지정)</div>
+</div>
+</div>
 
 ::: warning 유의사항
 증빙서류 제출
@@ -186,7 +277,7 @@
 
 ## ③ 육아 지원 제도
 
-### 육아휴직
+### 육아휴직 {#parental-leave}
 
 > 임직원이 자녀양육을 위해 육아에 전념할 수 있도록 일·가정 양립을 지원합니다.
 
@@ -201,10 +292,17 @@
 
 **[신청 절차]**
 
-1. Playground 내 '육아휴직 신청서' 상신
-2. 증빙서류 첨부 (등본/진단서/육아휴직 잔여기간 등)
-3. 실장 전결
-4. 열람자 지정: 인사담당자, 인사팀장
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">Playground 내<br>'육아휴직 신청서'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부<br>(등본/진단서/<br>육아휴직 잔여기간 등)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">실장 전결</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">열람자 지정<br>(인사담당자·인사팀장)</div>
+</div>
+</div>
 
 ::: warning 유의사항
 - 육아휴직 개시 전 사전 신청 원칙
@@ -213,7 +311,7 @@
 
 ---
 
-### 육아기 근로시간 단축
+### 육아기 근로시간 단축 {#childcare-reduced-hours}
 
 > 자녀 양육기 임직원의 근로시간 부담을 완화하여 육아와 직장생활을 병행할 수 있도록 지원합니다.
 
@@ -224,11 +322,15 @@
 
 **[신청 절차]**
 
-1. Playground 내 '육아기 근로시간 단축신청서' 상신
-2. 증빙서류 첨부 (가족관계증명서 or 등본)
-3. 결재
-   - 의뢰부서: 본인 → 팀장 → 실장
-   - 주무부서: 인사담당자 → 인사팀장
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">Playground 내<br>'육아기 근로시간<br>단축신청서' 상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부<br>(가족관계증명서 or 등본)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">결재<br>의뢰: 본인 → 팀장 → 실장<br>주무: 인사담당자 → 인사팀장</div>
+</div>
+</div>
 
 ::: warning 유의사항
 - 단축 근무 시작 전 사전 신청 원칙
