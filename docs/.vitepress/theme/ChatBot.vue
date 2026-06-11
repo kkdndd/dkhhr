@@ -15,6 +15,10 @@ interface Message {
   role: 'user' | 'bot'
   text: string
   link?: string
+  table?: {
+    headers: string[]
+    rows: string[][]
+  }
 }
 
 const isMinimized = ref(false)
@@ -99,7 +103,8 @@ function send() {
       messages.value.push({
         role: 'bot',
         text: match.answer,
-        link: match.link
+        link: match.link,
+        table: match.table
       })
     } else {
       messages.value.push({
@@ -156,6 +161,21 @@ function askQuick(q: string) {
         >
           <div class="chatbot-bubble">
             <div>{{ msg.text }}</div>
+            <!-- 표 (table 필드가 있을 때만 렌더링) -->
+            <div v-if="msg.table" class="chatbot-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th v-for="(h, i) in msg.table.headers" :key="'h' + i">{{ h }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(row, ri) in msg.table.rows" :key="'r' + ri">
+                    <td v-for="(cell, ci) in row" :key="'c' + ci">{{ cell }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a v-if="msg.link" :href="msg.link" class="chatbot-link">
               자세히 보기 →
             </a>
@@ -316,6 +336,46 @@ function askQuick(q: string) {
   color: var(--vp-c-text-1, #213547);
   border: 1px solid var(--vp-c-divider, #e2e2e3);
   border-bottom-left-radius: 5px;
+}
+
+/* 챗봇 답변 내 표 스타일 */
+.chatbot-table {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  overflow-x: auto;
+}
+
+.chatbot-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.chatbot-table th {
+  background: #1A2A4F;
+  color: #ffffff;
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #1A2A4F;
+  white-space: nowrap;
+}
+
+.chatbot-table td {
+  padding: 6px 8px;
+  border: 1px solid #DCE2EE;
+  text-align: center;
+  color: #1A2A4F;
+  word-break: keep-all;
+}
+
+.chatbot-table tbody tr:nth-child(even) td {
+  background: #F4F6FA;
+}
+
+.chatbot-table tbody td:first-child {
+  font-weight: 600;
 }
 
 .chatbot-link {
