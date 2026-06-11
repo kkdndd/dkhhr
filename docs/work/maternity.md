@@ -165,7 +165,9 @@
 :::
 
 ::: warning 유의사항
-단축근무기간은 "임신기 근로시간 단축 대상기간 계산표"를 기준으로 합니다 (첨부파일 참고).
+단축근무기간은 "임신기 근로시간 단축 대상기간 계산표"를 기준으로 합니다.
+
+**파일링크**: [https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20250201644](https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20250201644)
 :::
 
 ---

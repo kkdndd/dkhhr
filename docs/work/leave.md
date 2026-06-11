@@ -35,9 +35,9 @@
 <div class="dk-process-flow">
 <div class="dk-process-row">
 <div class="dk-process-step">Playground 내<br>'시차출퇴근 신청서'<br>상신</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+<div class="dk-process-arrow"></div>
 <div class="dk-process-step">전결권자 결재<br>(인사담당자 합의 지정)</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+<div class="dk-process-arrow"></div>
 <div class="dk-process-step">전결권자 주관 하<br>자율적 운영·관리</div>
 </div>
 </div>
@@ -62,6 +62,20 @@
 - 대상: 홀딩스 전 직원
 - 정기적인 연차 잔여일 안내를 통해 자율 사용을 권장
 
+**[신청 절차]**
+
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서 신청'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">업무대책 작성<br>(공가 외 사유 미기재)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">비고란 사용시간 기재<br>(반차/반반차 사용 시)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">열람자 지정 후<br>자가결재<br>(전결권자/인사담당자)</div>
+</div>
+</div>
+
 ::: warning 유의사항
 - 개인 연차 사용 외 공가/장기근속포상휴가/경조휴가 등은 전결권자 결재 필수
 - 휴가신청서는 휴가 사용일 기준 사전 상신 원칙
@@ -80,19 +94,9 @@
   → 시차출퇴근제 이용 시 개인 근무 시작 시간으로부터 2시간 단위 휴가 사용
 - 휴가신청 단위: **2시간(0.25) / 4시간(0.5) / 6시간(0.75) / 8시간(1)**
 
-**[신청 절차]**
-
-<div class="dk-process-flow">
-<div class="dk-process-row">
-<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서 신청'<br>상신</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">비고란 사용시간 기재<br>(반차/반반차 사용 시)</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">업무대책 작성<br>(공가 외 사유 미기재)</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">열람자 지정 후<br>자가결재<br>(전결권자/인사담당자)</div>
-</div>
-</div>
+::: tip 신청 방법
+신청 절차는 [휴가알림제 → 신청 절차](#leave-notification)와 동일합니다.
+:::
 
 ---
 
@@ -112,6 +116,20 @@
   → 가족관계증명서로 확인 가능한 대상 (본인/배우자 발급기준)
 - 인정 사유: 병원진료 / 자녀 유치원·어린이집·학교 공식행사
 
+**[신청 절차]**
+
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_특별휴가'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">사유 작성<br>(대상자, 특별휴가 사유)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">전결권자 결재<br>(인사담당자 합의 지정)</div>
+</div>
+</div>
+
 ::: warning 유의사항
 - **증빙서류 제출 필수**
   1. 대상 확인: 가족관계증명서
@@ -126,27 +144,33 @@
 
 > 본인과 가족의 경조사 발생 시 사유별 휴가가 부여됩니다.
 
-| 구분 | 대상 | 경조휴가 |
-|------|------|----------|
-| **결혼** | 본인 | 5일 |
-| | 자녀 | 2일 |
-| | 형제/자매 | 1일 |
-| **회갑** | 부모 | 1일 |
-| | 배우자 부모 | 1일 |
-| **고희** | 부모 | 1일 |
-| | 배우자 부모 | 1일 |
-| **출산** | 본인 | 법정 유급휴가에 따름 |
-| **사망** | 배우자 | 5일 |
-| | 직계부모 | 5일 |
-| | 배우자 부모 | 5일 |
-| | 자녀 | 5일 |
-| | 형제/자매 | 3일 |
-| | 직계 조부모 | 3일 |
-| | 직계 외조부모 | 3일 |
-| | 배우자 조부모 | 1일 |
-| | 배우자 외조부모 | 1일 |
-| | (배우자) 부모 형제자매상 | 1일 |
-| | 형제자매 배우자상 | 1일 |
+<table>
+<thead>
+<tr><th>구분</th><th>대상</th><th>경조휴가</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="3"><strong>결혼</strong></td><td>본인</td><td>5일</td></tr>
+<tr><td>자녀</td><td>2일</td></tr>
+<tr><td>형제/자매</td><td>1일</td></tr>
+<tr><td rowspan="2"><strong>회갑</strong></td><td>부모</td><td>1일</td></tr>
+<tr><td>배우자 부모</td><td>1일</td></tr>
+<tr><td rowspan="2"><strong>고희</strong></td><td>부모</td><td>1일</td></tr>
+<tr><td>배우자 부모</td><td>1일</td></tr>
+<tr><td><strong>출산</strong></td><td>본인</td><td>법정 유급휴가에 따름</td></tr>
+<tr><td rowspan="12"><strong>사망</strong></td><td>본인</td><td>-</td></tr>
+<tr><td>배우자</td><td>5일</td></tr>
+<tr><td>직계부모</td><td>5일</td></tr>
+<tr><td>배우자 부모</td><td>5일</td></tr>
+<tr><td>자녀</td><td>5일</td></tr>
+<tr><td>형제/자매</td><td>3일</td></tr>
+<tr><td>직계 조부모</td><td>3일</td></tr>
+<tr><td>직계 외조부모</td><td>3일</td></tr>
+<tr><td>배우자 조부모</td><td>1일</td></tr>
+<tr><td>배우자 외조부모</td><td>1일</td></tr>
+<tr><td>(배우자) 부모 형제자매상</td><td>1일</td></tr>
+<tr><td>형제자매 배우자상</td><td>1일</td></tr>
+</tbody>
+</table>
 
 **[신청 방법]**
 - ERP 내 '휴가 신청서' 작성
@@ -171,7 +195,20 @@
   → 생일 당일 휴가 사용에 한함 / 생일 이후 휴가 자동 소멸
   → 생일이 주말/공휴일인 경우 생일 전·후 1일 중 사용
 
-**[휴가 신청 절차]**
+**[신청 절차]**
+
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">ERP 근태신청 내<br>'휴가신청서_공가'<br>상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">사유 작성<br>(휴가사유_생일)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">휴가기간 작성<br>(4시간 휴가)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">결재자 지정<br>(전결권자 결재)</div>
+</div>
+</div>
+
 - 생일 전 휴가신청서 **사전 상신** 필수
 
 ::: warning 유의사항

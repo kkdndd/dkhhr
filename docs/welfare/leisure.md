@@ -34,19 +34,23 @@
 
 **[신청 절차]**
 
+- **최초 신청 시**: '학습비 지원 신청서' 상신
+
 <div class="dk-process-flow">
 <div class="dk-process-row">
-<div class="dk-process-label">매월<br>학습지 지원</div>
-<div class="dk-process-step">수강신청 및<br>교육비 개인 선결제</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">담당자에게 영수증 제출<br>(매월 20~21일)</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">지급<br>(해당월 25일)</div>
+<div class="dk-process-step">Playground 내<br>'학습비지원 신청서' 상신</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">정보입력<br>(학습자 정보 및 관계 등)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부<br>(영수증, 가족관계증명서)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">결재자 지정<br>(주무부서 결재)</div>
 </div>
 </div>
 
-- **최초 신청 시**: '학습비 지원 신청서' 상신
-- 지원금 신청 시점으로부터 **3개월 이내**의 건에 대해서만 지원
+- **매월 학습지 지원**: 수강신청 및 교육비 개인 선결제 후 사후 신청
+  - ※ 수강신청 및 결제 → 담당자에게 영수증 제출 (20~21일) → 지급 (해당월 25일)
+  - ※ 지원금 신청 시점으로부터 **3개월 이내**의 건에 대해서만 지원
 
 ::: warning 유의사항
 - **증빙서류 제출 필수**
@@ -63,7 +67,20 @@
   → 2구좌 초과 시 일반회원가의 **30% 할인** 적용
 
 **[신청 절차]**
-- 강원심층수 '천년동안 정기배송' 네이버폼을 통한 개별 신청
+
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">Playground 게시판<br>'천년동안 정기배송<br>신청서' 제출</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">배송정보입력<br>(제품, 수량,<br>수령정보 등)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">급여공제<br>(제품수령 후<br>익월 정산)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">캐시백 지급<br>(5% 계좌 입금)</div>
+</div>
+</div>
+
+- 강원심층수 '천년동안 정기배송' **네이버폼**을 통한 개별 신청도 가능합니다.
 
 ::: warning 유의사항
 - 배송지/수량 변경 시 강원심층수 고객만족센터로 직접 변경
@@ -172,12 +189,12 @@
 - 최소 인원: 3명 (회원 구성원 소속 팀 2개 팀 이상)
 
 **[활동 지원금]**
-- 참여 구성원별 **1인 5만원까지 실비 지원** (분기당 1회 지급 / 회원 분기 예산 내역 사전 확인 필수)
-  - 모임 활동에 필요한 경비 및 친목도모를 위한 식사비 포함
-  - 분기별 1개 모임 활동 내에서만 분기 지원금 사용 가능
-  - 분할사용 불가 / 개인별 잔여 분기 예산 이월 불가
-  - 활동지원금은 모임 활동 종료 후 모임 운영자가 참가자 인원 지원금 일괄 신청
-  - 활동비는 선결제 후 사후 지원 / 예산 소진 월에 지원금 신청
+- 참여 구성원별 **1인 5만원까지 실비 지원**<br>(분기당 1회 지급 / 회원 분기 예산 내역 사전 확인 필수)
+- 모임 활동에 필요한 경비 및 친목도모를 위한 식사비 포함
+- 분기별 1개 모임 활동 내에서만 분기 지원금 사용 가능
+- 분할사용 불가 / 개인별 잔여 분기 예산 이월 불가
+- 활동지원금은 모임 활동 종료 후 모임 운영자가 참가자 인원 지원금 일괄 신청
+- 활동비는 선결제 후 사후 지원 / 예산 소진 월에 지원금 신청
 
 **[휴가 지원]**
 - **2시간 휴가 지원** (모임 횟수와 상관없이 분기당 1회 지원 / 공가 휴가신청서 사전 상신_해당부서 팀장 결재)
@@ -244,7 +261,7 @@
 - 생일 축하금: **10만원 상당의 상품권 증정**
 
 **[신청 절차]**
-- 별도 신청 절차 **없음** (인사팀에서 일괄 지급)
+- 별도 신청 절차 **없음**
 
 ::: warning 유의사항
 생일(음력/양력) 관련 정보 변경 시 담당자에게 전달
@@ -268,6 +285,20 @@
 - 지급 시기: **설날, 추석**
 - 지급 내용: **10만원 상당의 명절선물 제공**
 
+**[신청 절차]**
+
+<div class="dk-process-flow">
+<div class="dk-process-row">
+<div class="dk-process-step">품목 희망조사 실시<br>(조직문화 담당자)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">구성원 희망품목 선택</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">팀별 취합본 제출</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">명절선물 수령</div>
+</div>
+</div>
+
 ::: warning 유의사항
 명절선물 품목은 매년 상이할 수 있으며, 회사의 운영방침에 따라 결정됩니다.
 :::
@@ -278,25 +309,30 @@
 
 > 본인과 가족의 경조사 발생 시 경조금 및 부속 혜택을 지원합니다.
 
-| 구분 | 대상 | 경조금 |
-|------|------|--------|
-| **결혼** | 본인 | 50만원 + 화환 |
-| | 자녀 | 30만원 |
-| **회갑** | 부모 | 10만원 + 마이다스호텔 1박 이용권 (주중) |
-| | 배우자 부모 | 10만원 + 마이다스호텔 1박 이용권 (주중) |
-| **고희** | 부모 | 10만원 + 마이다스호텔 1박 이용권 (주중) |
-| | 배우자 부모 | 10만원 + 마이다스호텔 1박 이용권 (주중) |
-| **출산** | 본인 | 30만원 + 베이비워터 1.2L×2팩 1년 |
-| **사망** | 본인 | 300만원 |
-| | 배우자 | 100만원 |
-| | 직계부모 | 50만원 |
-| | 배우자 부모 | 50만원 |
-| | 자녀 | 50만원 |
-| | 형제/자매 | 10만원 |
-| | 직계 조부모 | 10만원 |
-| | 직계 외조부모 | 10만원 |
-| | 배우자 조부모 | 10만원 |
-| | 배우자 외조부모 | 10만원 |
+<table>
+<thead>
+<tr><th>구분</th><th>대상</th><th>경조금</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2"><strong>결혼</strong></td><td>본인</td><td>50만원 + 화환</td></tr>
+<tr><td>자녀</td><td>30만원</td></tr>
+<tr><td rowspan="2"><strong>회갑</strong></td><td>부모</td><td>10만원 + 마이다스호텔 1박 이용권 (주중)</td></tr>
+<tr><td>배우자 부모</td><td>10만원 + 마이다스호텔 1박 이용권 (주중)</td></tr>
+<tr><td rowspan="2"><strong>고희</strong></td><td>부모</td><td>10만원 + 마이다스호텔 1박 이용권 (주중)</td></tr>
+<tr><td>배우자 부모</td><td>10만원 + 마이다스호텔 1박 이용권 (주중)</td></tr>
+<tr><td><strong>출산</strong></td><td>본인</td><td>30만원 + 베이비워터 1.2L×2팩 1년</td></tr>
+<tr><td rowspan="10"><strong>사망</strong></td><td>본인</td><td>300만원</td></tr>
+<tr><td>배우자</td><td>100만원</td></tr>
+<tr><td>직계부모</td><td>50만원</td></tr>
+<tr><td>배우자 부모</td><td>50만원</td></tr>
+<tr><td>자녀</td><td>50만원</td></tr>
+<tr><td>형제/자매</td><td>10만원</td></tr>
+<tr><td>직계 조부모</td><td>10만원</td></tr>
+<tr><td>직계 외조부모</td><td>10만원</td></tr>
+<tr><td>배우자 조부모</td><td>10만원</td></tr>
+<tr><td>배우자 외조부모</td><td>10만원</td></tr>
+</tbody>
+</table>
 
 **[신청 절차]**
 
@@ -331,43 +367,70 @@
 **[지원 개요]**
 - 지원 대상: 홀딩스 전 임직원
 
-| 구분 | 선택 1. 장의용품 | 선택 2. 상조서비스 보조금 |
-|------|------------------|---------------------------|
-| 본인 | 장의용품 (생수 및 일회용품) | **100% 지원** (한도 270만원) |
-| 배우자상 | 장의용품 (생수 및 일회용품) | **100% 지원** (한도 270만원) |
-| 직계부모상 | 장의용품 (생수 및 일회용품) | **50% 지원** (한도 135만원) |
-| 배우자 부모상 | 장의용품 (생수 및 일회용품) | **50% 지원** (한도 135만원) |
-| 자녀상 | 장의용품 (생수 및 일회용품) | **50% 지원** (한도 135만원) |
-| 형제/자매상 | 장의용품 (생수 및 일회용품) | **30만원 지원** |
-| 직계 조부모상 | 장의용품 (생수 및 일회용품) | **30만원 지원** |
-| 직계 외조부모상 | 장의용품 (생수 및 일회용품) | **30만원 지원** |
-| 배우자 조부모상 | 장의용품 (생수 및 일회용품) | **30만원 지원** |
-| 배우자 외조부모상 | 장의용품 (생수 및 일회용품) | **30만원 지원** |
+<table>
+<thead>
+<tr>
+<th rowspan="2">구분</th>
+<th colspan="2">장례 지원</th>
+</tr>
+<tr>
+<th>선택 1. 장의용품</th>
+<th>선택 2. 상조서비스 보조금</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>본인</td>
+<td rowspan="10">장의용품<br>(생수 및 일회용품)</td>
+<td rowspan="2"><strong>100% 지원</strong><br>(한도 270만원)</td>
+</tr>
+<tr><td>배우자상</td></tr>
+<tr>
+<td>직계부모상</td>
+<td rowspan="3"><strong>50% 지원</strong><br>(한도 135만원)</td>
+</tr>
+<tr><td>배우자 부모상</td></tr>
+<tr><td>자녀상</td></tr>
+<tr>
+<td>형제/자매상</td>
+<td rowspan="5"><strong>30만원 지원</strong></td>
+</tr>
+<tr><td>직계 조부모상</td></tr>
+<tr><td>직계 외조부모상</td></tr>
+<tr><td>배우자 조부모상</td></tr>
+<tr><td>배우자 외조부모상</td></tr>
+</tbody>
+</table>
 
 ※ 상조서비스 보조금 한도 기준은 **패밀리상품 기준**으로 산정함
 
 **[신청 절차]**
 
-<div class="dk-process-flow">
+<div class="dk-process-flow-funeral">
+<div class="dk-funeral-start">장례<br>정보 확인</div>
+<div class="dk-funeral-branches">
 <div class="dk-process-row">
-<div class="dk-process-label">선택 1<br>장의용품</div>
+<div class="dk-process-label">선택<br>장의용품</div>
 <div class="dk-process-step">경영전략팀 연락</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+<div class="dk-process-arrow"></div>
 <div class="dk-process-step">장의용품 수령</div>
 </div>
 <div class="dk-process-row">
-<div class="dk-process-label">선택 2<br>상조서비스</div>
-<div class="dk-process-step">경영전략팀 연락</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">대교뉴이프 상담<br>(☎ 1660-0101)</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">대교뉴이프 접수<br>→ 상조서비스 제공</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">개인 선결제 후<br>사후 보조금 신청<br>(증빙: 대교뉴이프 정산서)</div>
-<div class="dk-process-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-<div class="dk-process-step">홀딩스 보조금 지급</div>
+<div class="dk-process-label">선택<br>상조서비스</div>
+<div class="dk-process-step">대교뉴이프 접수<br>/ 경영전략팀 연락</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">대교뉴이프<br>상담</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">대교뉴이프<br>상조서비스 제공</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">개인별 선결제 후,<br>사후 보조금 신청</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">홀딩스<br>보조금 지급</div>
 </div>
 </div>
+</div>
+
+<div class="dk-funeral-note">☎ 뉴이프 접수 콜센터: 1660-0101</div>
 
 ::: warning 유의사항
 대교뉴이프 상조서비스 보조금은 **개인별 선결제 후 사후 지원금 증빙 제출**해야 합니다.

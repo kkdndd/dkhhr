@@ -322,6 +322,84 @@
   border-left: 10px solid currentColor;
 }
 
+/* ── 장례 지원처럼 분기형 + 작은 폰트가 필요한 도식 ──
+   왼쪽 큰 시작점 박스 + 오른쪽 2행 분기 구조
+*/
+.dk-process-flow-funeral {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.dk-funeral-start {
+  background: linear-gradient(135deg, #2A3D6B 0%, #1A2A4F 100%);
+  color: #fff;
+  padding: 1rem 0.55rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-align: center;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.35;
+  flex-shrink: 0;
+  letter-spacing: -0.01em;
+}
+
+.dk-funeral-branches {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.dk-funeral-branches .dk-process-row {
+  margin: 0;
+}
+
+/* 분기형 안의 박스들은 폰트 작게 */
+.dk-process-flow-funeral .dk-process-step {
+  font-size: 0.72rem;
+  line-height: 1.35;
+  padding: 0.5rem 0.35rem;
+  min-height: 55px;
+}
+
+.dk-process-flow-funeral .dk-process-label {
+  font-size: 0.74rem;
+  min-width: 70px;
+  padding: 0.5rem 0.4rem;
+  min-height: 55px;
+  line-height: 1.3;
+}
+
+/* 콜센터 정보 한 줄 */
+.dk-funeral-note {
+  font-size: 0.85rem;
+  color: #1A2A4F;
+  font-weight: 600;
+  margin: 0.4rem 0 1.4rem;
+}
+
+.dark .dk-funeral-start {
+  background: linear-gradient(135deg, #1A2A4F 0%, #0F1B38 100%);
+}
+
+@media (max-width: 768px) {
+  .dk-process-flow-funeral {
+    flex-direction: column;
+  }
+  .dk-funeral-start {
+    width: 100%;
+    min-height: 50px;
+    padding: 0.6rem;
+  }
+}
+
 /* 다크 모드 */
 .dark .dk-process-step {
   background: #1c1c1e;
@@ -338,6 +416,7 @@
 */
 .dk-process-step-card {
   flex: 1;
+  align-self: stretch;
   background: #ffffff;
   border: 1px solid #DCE2EE;
   border-radius: 6px;
@@ -348,6 +427,7 @@
   align-items: stretch;
   justify-content: flex-start;
   min-height: 140px;
+  height: auto;
   font-weight: 500;
   color: #1A2A4F;
 }
@@ -378,7 +458,7 @@
 .dk-step-title {
   font-weight: 700;
   color: #1A2A4F;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   letter-spacing: -0.01em;
   flex: 1;
   text-align: center;
@@ -386,7 +466,7 @@
 
 .dk-step-body {
   padding: 0.75rem 0.85rem;
-  font-size: 0.83rem;
+  font-size: 0.7rem;
   line-height: 1.6;
   color: #424245;
   flex: 1;
@@ -419,7 +499,7 @@
   margin-top: 0.2rem;
   padding-left: 0.5rem;
   color: #475569;
-  font-size: 0.78rem;
+  font-size: 0.65rem;
 }
 
 .dk-step-body u {

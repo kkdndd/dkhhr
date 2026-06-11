@@ -26,10 +26,13 @@ const inputEl = ref<HTMLInputElement | null>(null)
 // 빠른 질문 (자주 사용되는 키워드)
 const quickQuestions = [
   '연차',
+  '생일',
+  '결혼',
+  '출산',
   '경조금',
-  '육아휴직',
+  '어학비',
   '건강검진',
-  '장기근속포상'
+  '시차출퇴근'
 ]
 
 // 초기 인사 메시지

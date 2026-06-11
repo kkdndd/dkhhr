@@ -48,7 +48,7 @@
 </div>
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step dk-process-step-card">
-<div class="dk-step-header"><span class="dk-step-number">3</span><span class="dk-step-title">인사위원회 심의</span></div>
+<div class="dk-step-header"><span class="dk-step-number">3</span><span class="dk-step-title" style="font-size: 0.7rem; white-space: nowrap;">인사위원회 심의</span></div>
 <div class="dk-step-body">승진 여부 심의 및 결정</div>
 </div>
 <div class="dk-process-arrow"></div>
@@ -88,9 +88,28 @@
 
 > 임금정책에 따른 기본연봉 인상률 × 개인별 평가등급에 따른 적용률
 
-| 평가등급 | S | A | B | C | D |
-|----------|---|---|---|---|---|
-| 적용률 | 200% | 150% | 100% | 50% | - |
+<table style="table-layout: fixed; width: 100%;">
+<thead>
+<tr>
+<th style="text-align: center;">평가등급</th>
+<th style="text-align: center;">S</th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+<th style="text-align: center;">C</th>
+<th style="text-align: center;">D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>적용률</strong></td>
+<td style="text-align: center;">200%</td>
+<td style="text-align: center;">150%</td>
+<td style="text-align: center;">100%</td>
+<td style="text-align: center;">50%</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
 
 ::: details 인원별 Matrix 적용 가이드라인 (참고)
 
@@ -160,8 +179,8 @@
 | C | - | 1명 | 3명 | 3명 | - |
 | D | - | - | 3명 | 3명 | 1명 |
 
-※ 평가 대상 팀원 수가 1명일 경우 조직 업적평가 등급을 그대로 적용함
-※ 팀원 평가점수의 평균 ≤ 조직평균점수 (필수)
+※ 평가 대상 팀원 수가 1명일 경우 조직 업적평가 등급을 그대로 적용함<br>
+※ 팀원 평가점수의 평균 ≤ 조직평균점수 (필수)<br>
 ※ 인원별 Matrix 가이드라인 적용 후 최종 평가등급은 인사위원회 심의 후 결정
 
 :::
@@ -185,9 +204,39 @@
 
 **[교육학점 이수실적 평가]**
 
-| 필수교육 이수시간 (반기별) | 5점 | 4점 | 3점 | 2점 | 1점 | 0점 |
-|---------------------------|-----|-----|-----|-----|-----|-----|
-| 시간 | 24H 이상 | 18~24H | 12~18H | 8~12H | 4~8H | 4H 미만 |
+<table style="table-layout: fixed; width: 100%;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 13.33%;">
+<col style="width: 13.33%;">
+<col style="width: 13.33%;">
+<col style="width: 13.33%;">
+<col style="width: 13.33%;">
+<col style="width: 13.33%;">
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">필수교육 이수시간<br>(반기별)</th>
+<th style="text-align: center;">5점</th>
+<th style="text-align: center;">4점</th>
+<th style="text-align: center;">3점</th>
+<th style="text-align: center;">2점</th>
+<th style="text-align: center;">1점</th>
+<th style="text-align: center;">0점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>시간</strong></td>
+<td style="text-align: center;">24H 이상</td>
+<td style="text-align: center;">18~24H</td>
+<td style="text-align: center;">12~18H</td>
+<td style="text-align: center;">8~12H</td>
+<td style="text-align: center;">4~8H</td>
+<td style="text-align: center;">4H 미만</td>
+</tr>
+</tbody>
+</table>
 
 ::: warning 유의사항
 - 교육별 이수시간은 **반기별 누적시간을 기준으로 산정**하며, 미달성 또는 초과 달성한 교육시간은 다음 반기로 **이월되지 않음**

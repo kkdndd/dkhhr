@@ -29,11 +29,17 @@
 
 <div class="dk-process-flow">
 <div class="dk-process-row">
-<div class="dk-process-step">수강신청 및<br>어학원 교육비<br>개인 선결제</div>
+<div class="dk-process-step">Playground 내<br>'교육지원 신청서' 상신</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">교육 종료 후<br>익월 신청</div>
+<div class="dk-process-step">정보입력<br>(교육기간, 교육비 등)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부<br>(영수증)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">결재자 지정<br>(주무부서 결재)</div>
 </div>
 </div>
+
+- 수강신청 및 어학원 교육비 **개인 선결제** 후 교육 종료 후 **익월 신청**
 
 ::: warning 유의사항
 - **증빙서류 제출 필수**
@@ -94,9 +100,11 @@
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step">정보입력<br>(교육과정)</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">결재자 지정<br>(교육담당자 전결)<br><strong>교육담당자: 최서연 대리</strong></div>
+<div class="dk-process-step">결재자 지정<br>(교육담당자 전결)</div>
 </div>
 </div>
+
+- **교육담당자**: 최서연 대리
 
 ::: warning 유의사항
 - **의무적으로 수료 완료 필수** / 수료하지 못했을 경우 경고 1회, 2회부터는 교육비 급여 공제
@@ -130,11 +138,17 @@
 
 <div class="dk-process-flow">
 <div class="dk-process-row">
-<div class="dk-process-step">학자금<br>개인 선결제</div>
+<div class="dk-process-step">Playground 내<br>'학자금지원 신청서' 상신</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">사후 지원금 신청<br>(증빙서류 첨부)</div>
+<div class="dk-process-step">정보입력<br>(수혜자, 수혜기간 등)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">증빙서류 첨부<br>(영수증, 가족관계증명서)</div>
+<div class="dk-process-arrow"></div>
+<div class="dk-process-step">결재자 지정<br>(주무부서 결재)</div>
 </div>
 </div>
+
+- 학자금은 **개인 선결제 후 사후 신청**합니다.
 
 ::: warning 유의사항
 - **증빙서류 제출 필수**
