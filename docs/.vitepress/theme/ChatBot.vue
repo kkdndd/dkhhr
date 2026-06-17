@@ -11,14 +11,19 @@
 import { ref, nextTick, onMounted } from 'vue'
 import { faqData, type FAQItem } from './faq-data'
 
+interface ChatTable {
+  title?: string
+  headers: string[]
+  rows: string[][]
+  colWidths?: string[]
+}
+
 interface Message {
   role: 'user' | 'bot'
   text: string
   link?: string
-  table?: {
-    headers: string[]
-    rows: string[][]
-  }
+  table?: ChatTable
+  tables?: ChatTable[]
 }
 
 const isMinimized = ref(false)
@@ -36,7 +41,8 @@ const quickQuestions = [
   '경조금',
   '어학비',
   '건강검진',
-  '시차출퇴근'
+  '시차출퇴근',
+  '여비규정'
 ]
 
 // 초기 인사 메시지
@@ -104,7 +110,8 @@ function send() {
         role: 'bot',
         text: match.answer,
         link: match.link,
-        table: match.table
+        table: match.table,
+        tables: match.tables
       })
     } else {
       messages.value.push({
@@ -136,7 +143,7 @@ function askQuick(q: string) {
       <div>
         <div class="chatbot-title">인사·복지 도우미</div>
         <div class="chatbot-subtitle" v-if="!isMinimized">
-          키워드로 빠르게 답을 찾아드려요
+          무엇이든 물어보세요
         </div>
       </div>
       <button
@@ -160,22 +167,41 @@ function askQuick(q: string) {
           :class="['chatbot-message', msg.role]"
         >
           <div class="chatbot-bubble">
-            <div>{{ msg.text }}</div>
-            <!-- 표 (table 필드가 있을 때만 렌더링) -->
+            <div class="chatbot-text">{{ msg.text }}</div>
+            <!-- 단일 표 (table 필드) -->
             <div v-if="msg.table" class="chatbot-table">
+              <div v-if="msg.table.title" class="chatbot-table-title">{{ msg.table.title }}</div>
               <table>
                 <thead>
                   <tr>
-                    <th v-for="(h, i) in msg.table.headers" :key="'h' + i">{{ h }}</th>
+                    <th v-for="(h, i) in msg.table.headers" :key="'h' + i" :style="msg.table.colWidths && msg.table.colWidths[i] ? { minWidth: msg.table.colWidths[i] } : {}">{{ h }}</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="(row, ri) in msg.table.rows" :key="'r' + ri">
-                    <td v-for="(cell, ci) in row" :key="'c' + ci">{{ cell }}</td>
+                    <td v-for="(cell, ci) in row" :key="'c' + ci" :class="{ multiline: String(cell).includes('\n') }" :style="msg.table.colWidths && msg.table.colWidths[ci] ? { minWidth: msg.table.colWidths[ci] } : {}">{{ cell }}</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <!-- 복수 표 (tables 필드) -->
+            <template v-if="msg.tables">
+              <div v-for="(t, ti) in msg.tables" :key="'tbl' + ti" class="chatbot-table">
+                <div v-if="t.title" class="chatbot-table-title">{{ t.title }}</div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th v-for="(h, i) in t.headers" :key="'h' + i" :style="t.colWidths && t.colWidths[i] ? { minWidth: t.colWidths[i] } : {}">{{ h }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(row, ri) in t.rows" :key="'r' + ri">
+                      <td v-for="(cell, ci) in row" :key="'c' + ci" :class="{ multiline: String(cell).includes('\n') }" :style="t.colWidths && t.colWidths[ci] ? { minWidth: t.colWidths[ci] } : {}">{{ cell }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </template>
             <a v-if="msg.link" :href="msg.link" class="chatbot-link">
               자세히 보기 →
             </a>
@@ -338,6 +364,11 @@ function askQuick(q: string) {
   border-bottom-left-radius: 5px;
 }
 
+/* 챗봇 답변 텍스트 - \n 줄바꿈 처리 */
+.chatbot-text {
+  white-space: pre-line;
+}
+
 /* 챗봇 답변 내 표 스타일 */
 .chatbot-table {
   margin-top: 10px;
@@ -345,8 +376,15 @@ function askQuick(q: string) {
   overflow-x: auto;
 }
 
+.chatbot-table-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1A2A4F;
+  margin-bottom: 4px;
+}
+
 .chatbot-table table {
-  width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
   font-size: 12px;
   line-height: 1.4;
@@ -368,6 +406,14 @@ function askQuick(q: string) {
   text-align: center;
   color: #1A2A4F;
   word-break: keep-all;
+  white-space: pre-line;
+  vertical-align: middle;
+}
+
+/* 여러 줄 셀은 좌측 정렬 */
+.chatbot-table td:has(br),
+.chatbot-table td.multiline {
+  text-align: left;
 }
 
 .chatbot-table tbody tr:nth-child(even) td {
