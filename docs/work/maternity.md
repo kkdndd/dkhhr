@@ -146,11 +146,11 @@
 
 <div class="dk-process-flow">
 <div class="dk-process-row">
-<div class="dk-process-step">Playground 내<br>'임신기 근로시간<br>단축신청서' 상신</div>
+<div class="dk-process-step" style="flex: 0.7;">Playground 내<br>'임신기 근로시간<br>단축신청서' 상신</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">증빙서류 첨부<br>(임신확인서)</div>
+<div class="dk-process-step" style="flex: 0.7;">증빙서류 첨부<br>(임신확인서)</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">결재<br>의뢰: 본인 → 팀장 → 실장<br>주무: 인사담당자 → 인사팀장</div>
+<div class="dk-process-step" style="flex: 1.6;">결재의뢰: 본인 → 팀장 → 실장<br>주무 : 인사담당자 → 인사팀장</div>
 </div>
 </div>
 
@@ -326,11 +326,11 @@
 
 <div class="dk-process-flow">
 <div class="dk-process-row">
-<div class="dk-process-step">Playground 내<br>'육아기 근로시간<br>단축신청서' 상신</div>
+<div class="dk-process-step" style="flex: 0.7;">Playground 내<br>'육아기 근로시간<br>단축신청서' 상신</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">증빙서류 첨부<br>(가족관계증명서 or 등본)</div>
+<div class="dk-process-step" style="flex: 0.7;">증빙서류 첨부<br>(가족관계증명서 or 등본)</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">결재<br>의뢰: 본인 → 팀장 → 실장<br>주무: 인사담당자 → 인사팀장</div>
+<div class="dk-process-step" style="flex: 1.6;">결재의뢰: 본인 → 팀장 → 실장<br>주무 : 인사담당자 → 인사팀장</div>
 </div>
 </div>
 

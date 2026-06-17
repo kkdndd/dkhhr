@@ -70,7 +70,7 @@
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step">업무대책 작성<br>(공가 외 사유 미기재)</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">비고란 사용시간 기재<br>(반차/반반차 사용 시)</div>
+<div class="dk-process-step">비고란<br>사용시간 기재<br>(반차/반반차 사용 시)</div>
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step">열람자 지정 후<br>자가결재<br>(전결권자/인사담당자)</div>
 </div>
@@ -90,7 +90,7 @@
 
 **[사용 기준]**
 - 대상: 홀딩스 전 직원
-- 근무 시작 시간으로부터 2시간 단위 휴가 사용 (점심시간 12시~1시 제외)
+- 근무 시작 시간으로부터 2시간 단위 휴가 사용 (점심시간 12시~1시 제외)<br>
   → 시차출퇴근제 이용 시 개인 근무 시작 시간으로부터 2시간 단위 휴가 사용
 - 휴가신청 단위: **2시간(0.25) / 4시간(0.5) / 6시간(0.75) / 8시간(1)**
 
@@ -134,7 +134,7 @@
 - **증빙서류 제출 필수**
   1. 대상 확인: 가족관계증명서
   2. 특별휴가 사유 증빙 서류 (안내문, 진료기록 등)
-  → 병원진료의 경우 사후 첨부 가능 (결재완료 후 댓글로 파일 첨부)
+  → 병원진료의 경우 사후 첨부 가능<br>&nbsp;&nbsp;&nbsp;(결재완료 후 댓글로 파일 첨부)
 - 특별휴가 대상 범위 및 인정사유 외 사용 시 연차 차감
 :::
 
@@ -154,8 +154,8 @@
 <tr><td>형제/자매</td><td>1일</td></tr>
 <tr><td rowspan="2"><strong>회갑</strong></td><td>부모</td><td>1일</td></tr>
 <tr><td>배우자 부모</td><td>1일</td></tr>
-<tr><td rowspan="2"><strong>고희</strong></td><td>부모</td><td>1일</td></tr>
-<tr><td>배우자 부모</td><td>1일</td></tr>
+<tr><td rowspan="2" style="background:#fff !important;"><strong>고희</strong></td><td>부모</td><td>1일</td></tr>
+<tr style="background:#fff !important;"><td style="background:#fff !important;">배우자 부모</td><td style="background:#fff !important;">1일</td></tr>
 <tr><td><strong>출산</strong></td><td>본인</td><td>법정 유급휴가에 따름</td></tr>
 <tr><td rowspan="12"><strong>사망</strong></td><td>본인</td><td>-</td></tr>
 <tr><td>배우자</td><td>5일</td></tr>
@@ -191,8 +191,8 @@
 
 **[운영 내용]**
 - 대상: 홀딩스 전 임직원
-- **생일 당일 4시간 휴가** 제공
-  → 생일 당일 휴가 사용에 한함 / 생일 이후 휴가 자동 소멸
+- **생일 당일 4시간 휴가** 제공<br>
+  → 생일 당일 휴가 사용에 한함 / 생일 이후 휴가 자동 소멸<br>
   → 생일이 주말/공휴일인 경우 생일 전·후 1일 중 사용
 
 **[신청 절차]**
