@@ -16,6 +16,7 @@ interface ChatTable {
   headers: string[]
   rows: string[][]
   colWidths?: string[]
+  colAligns?: string[]
 }
 
 interface Message {
@@ -35,12 +36,12 @@ const inputEl = ref<HTMLInputElement | null>(null)
 // 빠른 질문 (자주 사용되는 키워드)
 const quickQuestions = [
   '생일',
-  '출산휴가',
   '경조금',
   '외부교육',
   '건강검진',
   '시차출퇴근',
-  '여비규정'
+  '여비규정',
+  '결재선'
 ]
 
 // 초기 인사 메시지
@@ -172,12 +173,12 @@ function askQuick(q: string) {
               <table>
                 <thead>
                   <tr>
-                    <th v-for="(h, i) in msg.table.headers" :key="'h' + i" :style="msg.table.colWidths && msg.table.colWidths[i] ? { minWidth: msg.table.colWidths[i] } : {}">{{ h }}</th>
+                    <th v-for="(h, i) in msg.table.headers" :key="'h' + i" :style="{ ...(msg.table.colWidths && msg.table.colWidths[i] ? { minWidth: msg.table.colWidths[i] } : {}) }">{{ h }}</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="(row, ri) in msg.table.rows" :key="'r' + ri">
-                    <td v-for="(cell, ci) in row" :key="'c' + ci" :class="{ multiline: String(cell).includes('\n') }" :style="msg.table.colWidths && msg.table.colWidths[ci] ? { minWidth: msg.table.colWidths[ci] } : {}">{{ cell }}</td>
+                    <td v-for="(cell, ci) in row" :key="'c' + ci" :class="{ multiline: String(cell).includes('\n') }" :style="{ ...(msg.table.colWidths && msg.table.colWidths[ci] ? { minWidth: msg.table.colWidths[ci] } : {}), ...(msg.table.colAligns && msg.table.colAligns[ci] ? { textAlign: msg.table.colAligns[ci] } : {}) }">{{ cell }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -189,12 +190,12 @@ function askQuick(q: string) {
                 <table>
                   <thead>
                     <tr>
-                      <th v-for="(h, i) in t.headers" :key="'h' + i" :style="t.colWidths && t.colWidths[i] ? { minWidth: t.colWidths[i] } : {}">{{ h }}</th>
+                      <th v-for="(h, i) in t.headers" :key="'h' + i" :style="{ ...(t.colWidths && t.colWidths[i] ? { minWidth: t.colWidths[i] } : {}) }">{{ h }}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr v-for="(row, ri) in t.rows" :key="'r' + ri">
-                      <td v-for="(cell, ci) in row" :key="'c' + ci" :class="{ multiline: String(cell).includes('\n') }" :style="t.colWidths && t.colWidths[ci] ? { minWidth: t.colWidths[ci] } : {}">{{ cell }}</td>
+                      <td v-for="(cell, ci) in row" :key="'c' + ci" :class="{ multiline: String(cell).includes('\n') }" :style="{ ...(t.colWidths && t.colWidths[ci] ? { minWidth: t.colWidths[ci] } : {}), ...(t.colAligns && t.colAligns[ci] ? { textAlign: t.colAligns[ci] } : {}) }">{{ cell }}</td>
                     </tr>
                   </tbody>
                 </table>
