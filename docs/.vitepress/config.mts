@@ -15,6 +15,9 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
+  // 다크모드 비활성화 (라이트 모드 고정, 토글 버튼 숨김)
+  appearance: false,
+
   themeConfig: {
     // 상단 네비게이션의 로고 (좌측 사이트 타이틀 옆에 표시)
     // 실제 PNG 로고로 교체하려면 docs/public/ 에 daekyo-logo.png 를 두고
