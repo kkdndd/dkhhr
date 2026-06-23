@@ -14,5 +14,5 @@
 
 ## 문의
 
-- **경영전략팀**: 내선 0219 / minji_kang@daekyo.co.kr
-- **복리후생 담당**: 내선 0232 / seoyeon_choi@daekyo.co.kr
+- **인사담당**: 내선 0219 / minji_kang@daekyo.co.kr
+- **복리후생/교육 담당**: 내선 0232 / seoyeon_choi@daekyo.co.kr
