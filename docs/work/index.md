@@ -9,4 +9,4 @@
 
 ## 문의
 
-- 인사팀: 내선 0219 / minji_kang@daekyo.co.kr
+- 경영전략팀: 내선 0219 / minji_kang@daekyo.co.kr

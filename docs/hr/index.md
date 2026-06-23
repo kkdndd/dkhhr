@@ -410,6 +410,6 @@
 
 ## 문의
 
-- **인사팀**: 내선 0219 / minji_kang@daekyo.co.kr
+- **경영전략팀**: 내선 0219 / minji_kang@daekyo.co.kr
 - **교육 담당**: 최서연 대리
 - **복리후생 담당**: 내선 0232 / seoyeon_choi@daekyo.co.kr

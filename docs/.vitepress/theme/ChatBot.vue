@@ -115,7 +115,7 @@ function send() {
       messages.value.push({
         role: 'bot',
         text:
-          '죄송합니다. 정확한 답을 찾지 못했어요. 인사팀(내선 0219, minji_kang@daekyo.co.kr)으로 문의해 주세요.'
+          '죄송합니다. 정확한 답을 찾지 못했어요. 경영전략팀(내선 0219, minji_kang@daekyo.co.kr)으로 문의해 주세요.'
       })
     }
     scrollToBottom()

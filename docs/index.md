@@ -54,13 +54,13 @@ title: 대교홀딩스 인사·복지 안내
 <div class="dk-section">
 <h2 class="dk-h2"><span class="dk-h2-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>문의</h2>
 <div class="dk-contacts">
-<div class="dk-contact"><span class="dk-contact-label">인사팀</span><span class="dk-contact-info">내선 0219 · minji_kang@daekyo.co.kr</span></div>
+<div class="dk-contact"><span class="dk-contact-label">경영전략팀</span><span class="dk-contact-info">내선 0219 · minji_kang@daekyo.co.kr</span></div>
 <div class="dk-contact"><span class="dk-contact-label">복리후생 담당</span><span class="dk-contact-info">내선 0232 · seoyeon_choi@daekyo.co.kr</span></div>
 </div>
 </div>
 <div class="dk-tip">
 <div class="dk-tip-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-<div class="dk-tip-content"><div class="dk-tip-title">안내</div><p class="dk-tip-text">이 사이트의 내용은 사내 인사팀에서 직접 관리합니다. 잘못된 정보나 추가가 필요한 내용은 인사팀으로 알려주세요.</p></div>
+<div class="dk-tip-content"><div class="dk-tip-title">안내</div><p class="dk-tip-text">이 사이트의 내용은 사내 경영전략팀에서 직접 관리합니다. 잘못된 정보나 추가가 필요한 내용은 경영전략팀으로 알려주세요.</p></div>
 </div>
 </div>
 </div>

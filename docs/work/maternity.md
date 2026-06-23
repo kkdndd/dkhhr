@@ -150,7 +150,7 @@
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step" style="flex: 0.7;">증빙서류 첨부<br>(임신확인서)</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step" style="flex: 1.6;">결재의뢰: 본인 → 팀장 → 실장<br>주무 : 인사담당자 → 인사팀장</div>
+<div class="dk-process-step" style="flex: 1.6;">결재의뢰: 본인 → 팀장 → 실장<br>주무 : 인사담당자 → 경영전략팀장</div>
 </div>
 </div>
 
@@ -302,7 +302,7 @@
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step">실장 전결</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step">열람자 지정<br>(인사담당자·인사팀장)</div>
+<div class="dk-process-step">열람자 지정<br>(인사담당자·경영전략팀장)</div>
 </div>
 </div>
 
@@ -330,7 +330,7 @@
 <div class="dk-process-arrow"></div>
 <div class="dk-process-step" style="flex: 0.7;">증빙서류 첨부<br>(가족관계증명서 or 등본)</div>
 <div class="dk-process-arrow"></div>
-<div class="dk-process-step" style="flex: 1.6;">결재의뢰: 본인 → 팀장 → 실장<br>주무 : 인사담당자 → 인사팀장</div>
+<div class="dk-process-step" style="flex: 1.6;">결재의뢰: 본인 → 팀장 → 실장<br>주무 : 인사담당자 → 경영전략팀장</div>
 </div>
 </div>
 
@@ -346,5 +346,5 @@
 
 ## 문의
 
-- **인사팀**: 내선 0219 / minji_kang@daekyo.co.kr
+- **경영전략팀**: 내선 0219 / minji_kang@daekyo.co.kr
 - **복리후생 담당**: 내선 0232 / seoyeon_choi@daekyo.co.kr

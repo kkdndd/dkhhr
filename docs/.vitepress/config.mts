@@ -94,7 +94,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '대교홀딩스 인사팀',
+      message: '대교홀딩스 경영전략팀',
       copyright: `© ${new Date().getFullYear()} 대교홀딩스`
     },
 
